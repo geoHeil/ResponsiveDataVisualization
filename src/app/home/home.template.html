@@ -15,6 +15,19 @@
   <hr>
 
   <div>
+    <h4>Testing foo</h4>
+    <p>pre</p>
+    <!--<bar-graph bind-data="graphData" width="400" height="150" ></bar-graph>-->
+    <div class="row a2p-content">
+      <p class='a2p-h1'>Obligatory D3 Bar Chart</p>
+
+      <div class="a2p-pad-top">
+        <bar-graph bind-data="graphData" width="400" height="150" >
+        </bar-graph>
+
+      </div>
+    </div>
+    <p>after</p>
     <h4>Local State</h4>
 
     <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
