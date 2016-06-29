@@ -52,6 +52,10 @@ export class BarGraph
   constructor ( elementRef: ElementRef, @Attribute('width') width: string, @Attribute('height') height: string )
   {
     let el: any    = elementRef.nativeElement;  // reference to <bar-graph> element from the main template
+    console.log("HERE#############")
+    console.log(el)
+    console.log("HERE3333#############")
+    console.log(elementRef)
     let graph: any = d3.select(el);             // D3 chart container
 
     // setup the graph
