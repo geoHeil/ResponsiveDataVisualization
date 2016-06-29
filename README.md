@@ -30,3 +30,4 @@ go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http
   - During my initial steps I try to get everything working together following https://github.com/theAlgorithmist/D3BarChart 
   - However, the bar chart cannot be loaded due to: `TypeError: Cannot read property 'style' of null`
   - As you can see from the log statement the graph is not null, but does not have a 'style' property
+  - How to render [http://stackoverflow.duapp.com/questions/35633335/how-to-make-third-party-libraries-play-nice-with-angular-2s-renderer](http://stackoverflow.duapp.com/questions/35633335/how-to-make-third-party-libraries-play-nice-with-angular-2s-renderer)
