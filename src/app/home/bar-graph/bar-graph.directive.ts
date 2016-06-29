@@ -52,12 +52,14 @@ export class BarGraph
   constructor ( elementRef: ElementRef, @Attribute('width') width: string, @Attribute('height') height: string )
   {
     let el: any    = elementRef.nativeElement;  // reference to <bar-graph> element from the main template
-    console.log("HERE#############")
+    console.log("### native elem without style property ###")
     console.log(el)
-    console.log("HERE3333#############")
+    console.log("### elemRef with style ###")
     console.log(elementRef)
+    console.log("data ", this.data)
     let graph: any = d3.select(el);             // D3 chart container
 
+    console.log("graph ", graph)
     // setup the graph
     this.divs = graph
       .append('div')
@@ -69,6 +71,7 @@ export class BarGraph
         'height': height + 'px',
       })
       .selectAll('div');
+    console.log("divs ", this.divs)
   }
 
   // Render the D3 Bar Chart

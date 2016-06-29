@@ -27,4 +27,6 @@ go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http
 
 # Problems
 
-  - bar chart not loaded
+  - During my initial steps I try to get everything working together following https://github.com/theAlgorithmist/D3BarChart 
+  - However, the bar chart cannot be loaded due to: `TypeError: Cannot read property 'style' of null`
+  - As you can see from the log statement the graph is not null, but does not have a 'style' property
